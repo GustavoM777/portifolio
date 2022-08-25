@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gustavo Mattos - Desenvolvedor Frontend</title>
+
+  <link rel="stylesheet" href="src/css/font-awesome.css" />
+  <link rel="stylesheet" href="src/css/variaveis.css" />
+  <link rel="stylesheet" href="src/css/reset.css" />
+
+  <!-- Global -->
+  <link rel="stylesheet" href="src/css/globais.css" />
+
+  <!-- Seções -->
+  <link rel="stylesheet" href="src/css/secoes/header.css" />
+  <link rel="stylesheet" href="src/css/secoes/home.css" />
+  <link rel="stylesheet" href="src/css/secoes/sobre.css" />
+  <link rel="stylesheet" href="src/css/secoes/habilidades.css" />
+  <link rel="stylesheet" href="src/css/secoes/projetos.css" />
+  <link rel="stylesheet" href="src/css/secoes/footer.css" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="row justify-content-between alinhar-itens-no-centro">
+        <a href="#">
+          <h1 class="logo">GM</h1>
+        </a>
+        <nav>
+          <input id="menu-hamburguer" type="checkbox" />
+          <label for="menu-hamburguer">
+            <div class="menu">
+              <span class="hamburguer"></span>
+            </div>
+          </label>
+          <ul>
+            <li><a href="#sobre-mim">Sobre mim</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#projetos">Meus projetos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="home">
+    <div class="container">
+      <div class="row full-screen alinhar-itens-no-centro">
+        <div class="texto-home">
+          <p>Olá 🖖,</p>
+          <h1>Sou o Gustavo Mattos</h1>
+          <h2>Desenvolvedor Frontend</h2>
+          <div class="redes-sociais">
+            <a href="https://www.linkedin.com/in/guh-mattos/" target="_blanck" class="outer-shadow"><i
+                class="fab fa-linkedin-in"></i></a>
+            <a href="https://api.whatsapp.com/send?phone=5527988643733&text=Ol%C3%A1%2C%20Gustavo.%20Tudo%20bem%3F"
+              target="_blanck" class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://github.com/GustavoM777" target="_blanck" class="outer-shadow"><i
+                class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/guh_mattos/" target="_blanck" class="outer-shadow"><i
+                class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="img-home">
+          <div class="img-box inner-shadow">
+            <img class="outer-shadow" src="src/imagens/foto-perfil.png" alt="foto do perfil do Ricardo" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sobre-mim section" id="sobre-mim">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Sobre mim</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="imagem-sobre-mim">
+          <div class="img-box inner-shadow">
+            <img src="src/imagens/foto-perfil2.png" alt="foto sobre mim" class="outer-shadow" />
+          </div>
+        </div>
+        <div class="informacoes-sobre-mim">
+          <p>
+            <strong>Olá! Me chamo Gustavo Mattos e sou um desenvolvedor frontend em
+              formação!</strong>
+            Gosto MUITO da área de tecnologia, e tenho certeza que posso contribuir em qualquer time com as minhas
+            habilidades.
+          </p>
+
+          <p>
+            Estou sempre me desafiando com novos projetos e participando de comunidades de programação para buscar
+            feedback de outros desenvolvedores e desenvolvedoras. Além de tentar ajudar essas pessoas com o que eu já
+            aprendi. 😁
+          </p>
+
+          <p>
+            Ah, sou instumentista, gosto de música, jogos, filmes, séries, Matemática e outras nerdices. 🤓
+          </p>
+
+          <div class="botoes">
+            <a target="_blank" href="src/arquivos/cv.pdf" class="botao outer-shadow">Veja meu CV</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="habilidades section" id="habilidades">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Habilidades</h2>
+        </div>
+      </div>
+      <div class="container-habilidades">
+        <div class="informacoes javascript">
+          <div class="logo">
+            <i class="devicon devicon-javascript-plain" id="javascript"></i>
+          </div>
+          <h3>JavaScript</h3>
+          <p>Tenho uma boa base do JS. Já entendo bem conceitos como callbacks, promisses, async/await, consumo de APIs,
+            destructuring, spread operators, dentre outros. </p>
+        </div>
+        <div class="informacoes html">
+          <div class="logo">
+            <i class="devicon devicon-html5-plain-wordmark" id="html"></i>
+          </div>
+          <h3>HTML5</h3>
+          <p>HTMl é uma linguagem de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser
+            interpretados por navegadores.</p>
+        </div>
+        <div class="informacoes css">
+          <div class="logo">
+            <i class="devicon devicon-css3-plain-wordmark" id="css"></i>
+          </div>
+          <h3>CSS3</h3>
+          <p>O CSS é uma linguagem de folhas de estilos que é utilizada para definir como os documentos escritos na
+            linguagem de marcação HTML.</p>
+        </div>
+        <div class="informacoes github">
+          <div class="logo">
+            <i class="devicon devicon-github-original" id="github"></i>
+          </div>
+          <h3>GitHub</h3>
+          <p>GitHub é uma plataforma de hospedagem de código-fonte e arquivos com controle de versão usando o Git. É
+            como uma plataforma social colaborativa, onde programadores e empresas colocam seus projetos para o
+            desenvolvimento do código.</p>
+        </div>
+        <div class="informacoes git">
+          <div class="logo">
+            <i class="devicon devicon-git-plain" id="git"></i>
+          </div>
+          <h3>Git</h3>
+          <p>Ferramenta de Controle de versão - função de registrar quaisquer alterações feitas em cima de um código,
+            armazenando essas informações e permitindo que, caso seja necessário, um(a) programador(a) possa regredir a
+            versões anteriores de uma aplicação de modo simples e rápido.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="projetos section" id="projetos">
+    <div class="container">
+      <div class="row">
+        <div class="section-title">
+          <h2>Meus projetos</h2>
+        </div>
+      </div>
+      <div class="container-projetos">
+        <div class="projeto">
+          <a href="https://xavantesshop.ga" target="_blanck">
+            <img src="src/imagens/xavantes.gif" alt="Xavantes Shop" />
+            <h3>Xavantes Shop</h3>
+            <div class="informacoes-projeto">
+              <p>A Lojas Xavantes Shop é um projeto autoral, desenvolvido com a finalidade de atender a demanda real presente no seguimento de  compra de produtos online.</p>
+              <p>Tecnologias utilizadas | <strong>HTML, CSS e JavaScript.</strong></p><br>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+        <div class="projeto">
+          <a href="https://taupe-stardust-6b492f.netlify.app" target="_blanck">
+            <img src="src/imagens/climaVitoria.gif" alt="Projeto Clima Vitória" />
+            <h3>Clima Vitória - API</h3>
+            <div class="informacoes-projeto">
+              <p> Projeto autoral. Apresenta a data, horário, temperatura e clima da Cidade de Vitória-ES. </p>
+              <p>Tecnologias utilizadas | <strong>HTML, CSS e JavaScript.</strong></p><br>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+        <div class="projeto">
+          <a href="https://gleaming-kelpie-c3ae4d.netlify.app" target="_blanck">
+            <img src="src/imagens/github.gif" alt="Fetch Github Api" />
+            <h3>Projeto GitHub - API</h3>
+            <div class="informacoes-projeto">
+              <p>Acesse o perfil de qualquer usuário cadastrado na plataforma do GitHub, escolha um repositório e clique para ser direcionado para a página do projeto.</p>
+              <p>Tecnologias utilizadas | <strong>HTML, CSS e JavaScript.</strong></p><br>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+        <div class="projeto">
+          <a href="https://bucolic-piroshki-a753c7.netlify.app" target="_blanck">
+            <img src="src/imagens/landingpage.gif" alt="Nome do projeto" />
+            <h3>Landing Page</h3>
+            <div class="informacoes-projeto">
+              <p>Tecnologias utilizadas | <strong>HTML e CSS.</strong></p><br>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+        <div class="projeto">
+          <a href="https://gustavom777.github.io/Relogio-Digital-Smart/" target="_blanck">
+            <img src="src/imagens/relogio.gif" alt="Nome do projeto" />
+            <h3>Relógio Digital Smart</h3>
+            <div class="informacoes-projeto">
+              <p>Relógio Smart consumindo API - temperatura e umidade relativa da cidade de Vitória-ES.</p><br>
+              <p>Tecnologias utilizadas | <strong>HTML, CSS e JavaScript.</strong></p><br>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div> 
+          </a>
+        </div>
+        <div class="projeto">
+          <a href="https://gustavom777.github.io/Jogo-da-Memoria/" target="_blanck">
+            <img src="src/imagens/memoria.gif" alt="Nome do projeto" />
+            <h3>Jogo da Memória</h3>
+            <div class="informacoes-projeto">
+              <p>Tecnologias utilizadas | <strong>HTML, CSS e JavaScript.</strong></p>
+              <p>🔗 Ver no GitHub Pages</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <h2>Me envie uma mensagem!</h2>
+      <div class="redes-sociais">
+        <a href="https://www.linkedin.com/in/guh-mattos/" target="_blanck" class="outer-shadow"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=5527988643733&text=Ol%C3%A1%2C%20Gustavo.%20Tudo%20bem%3F"
+          target="_blanck" class="outer-shadow"><i class="fab fa-whatsapp"></i></a>
+        <a href="https://github.com/GustavoM777" target="_blanck" class="outer-shadow"><i class="fab fa-github"></i></a>
+        <a href="https://www.instagram.com/guh_mattos/" target="_blanck" class="outer-shadow"><i
+            class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/scripts/logos.js"></script>
+</body>
+
+</html>
