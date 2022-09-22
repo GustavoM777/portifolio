@@ -1,36 +1,41 @@
-.habilidades .container-habilidades {    
-    text-align: center;    
+.habilidades .container-habilidades {
+    text-align: center;
     display: flex;
-    justify-content: center;    
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
-.habilidades .container-habilidades .informacoes{
-    max-width: 350px;
-    padding: 40px 20px;    
+.habilidades .container-habilidades .informacoes {
+    width: 165px;
+    height: 165px;
+    margin: 10px;
+    padding: 40px 20px;
+    border: 1px solid var(--cor-branca);
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
 }
 
-.habilidades .container-habilidades .informacoes p,
+.habilidades .container-habilidades .informacoes:hover {
+    transform: scale(1.05);
+    transition: 0.4s ease-in-out;
+}
+
 .habilidades .container-habilidades .informacoes h3,
-.habilidades .container-habilidades .informacoes .logo i{
+.habilidades .container-habilidades .informacoes .logo i,
+.habilidades .container-habilidades .informacoes .logo img {
     transition: all .3s ease;
     -moz-transition: all .3s ease;
     -o-transition: all .3s ease;
     -webkit-transition: all .3s ease;
 }
 
-.habilidades .container-habilidades .informacoes:hover p,
-.habilidades .container-habilidades .informacoes:hover h3,
-.habilidades .container-habilidades .informacoes:hover .logo i{
-    color: var(--cor-primaria);
-}
-
 .habilidades .container-habilidades .informacoes h3 {
     font-size: var(--fonte-extra-grande);
     font-weight: 500;
     margin-bottom: 20px;
-    color: var(--cor-primaria);      
+    color: var(--cor-branca);
 }
 
 .habilidades .container-habilidades .informacoes p {
@@ -38,6 +43,19 @@
     font-family: var(--fonte-secundaria);
 }
 
-.habilidades .container-habilidades .informacoes .logo i {
+.habilidades .container-habilidades .informacoes .logo i,
+.habilidades .container-habilidades .informacoes .logo img {
     font-size: 8rem;
+    width: 64px;
+}
+
+@media(max-width:390px) {
+    #habilidades {
+        transform: scale(0.85);
+    }
+
+    .habilidades .container-habilidades {
+        display: grid;
+        grid-template: auto / auto auto;
+    }
 }
