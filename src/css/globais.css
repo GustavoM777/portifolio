@@ -24,18 +24,6 @@ video {
   width: 70%;
 }
 
-@media(max-width: 1280px) { 
-  html {
-      font-size: 50%;
-  }
-}
-
-body {
-  background-color: var(--cor-fundo-escuro);
-  font-family: var(--fonte-primaria);
-  font-size: var(--fonte-normal);
-}
-
 .outer-shadow {
   box-shadow: 3px 3px #222327, -3px -3px 3px #454545;
 }
@@ -119,6 +107,11 @@ body {
   padding: 7rem 0 7rem;
 }
 
+hr {
+  width: 90%;
+  margin: auto;
+}
+
 @media(max-width: 550px) { 
   video {
     width: 90%;
@@ -131,3 +124,8 @@ body {
   }
 }
 
+@media(max-width: 1280px) { 
+  html {
+      font-size: 50%;
+  }
+}
