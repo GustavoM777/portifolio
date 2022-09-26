@@ -32,7 +32,7 @@
 }
 
 .habilidades .container-habilidades .informacoes h3 {
-    font-size: var(--fonte-extra-grande);
+    font-size: var(--fonte-grande);
     font-weight: 500;
     margin-bottom: 20px;
     color: var(--cor-branca);
